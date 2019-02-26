@@ -14,6 +14,9 @@
       <ul class="nav navbar-nav">
         <li><a href="#">Link1</a></li>
         <li><a href="#">Link2</a></li>
+        <% if logged? == true%>
+        <li> link_to 'Salir', session_path, method: :delete %></li>
+        <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
